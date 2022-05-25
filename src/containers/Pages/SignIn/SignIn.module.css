@@ -1,0 +1,137 @@
+body {
+  font-family: sans-serif;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input {
+  border: 1px solid rgba(211, 211, 211, 0.459);
+  border-radius: 5px;
+  outline: none;
+  min-width: 250px;
+  padding: 15px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -webkit-appearance: none;
+}
+
+.label-float input:focus {
+  border: 2px solid #3951b2;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+.label-float button {
+  width: 85%;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 64px;
+  line-height: 36px;
+  /* padding: 10px; */
+  border-radius: 4px;
+  overflow: visible;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #48a6eb;
+  border-radius: 8px;
+  padding: 0 24px;
+  border-radius: 2.5px;
+  flex: 1 1;
+  font-size: 1rem;
+  height: 42px;
+  line-height: 42px !important;
+  box-shadow: 0 0 rgb(0 0 0 / 20%), 0 0 rgb(0 0 0 / 14%), 0 0 rgb(0 0 0 / 12%);
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 30px;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  background-color: #000;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.label-float input:required:invalid + label {
+  color: red;
+}
+.label-float input:focus:required:invalid {
+  border: 2px solid red;
+}
+.label-float input:required:invalid + label:before {
+  content: "*";
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  top: 0;
+  color: #3951b2;
+}
+
+.id-card-header {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.5rem;
+  position: relative;
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+.new {
+  color: #bbc4c9f7;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new a {
+  color: #48a6eb;
+  cursor: pointer;
+  text-decoration: none;
+}
+.id-forgot-password {
+  color: #48a6eb;
+  font-size: 14px;
+  margin-bottom: 2.875rem;
+  text-align: left;
+  padding: 20px;
+}
+
+.id-forgot-password a {
+  color: inherit;
+  text-decoration: none;
+}
+.error {
+  text-align: left;
+  padding-left: 50px;
+  font-size: 12px;
+  color: red;
+}

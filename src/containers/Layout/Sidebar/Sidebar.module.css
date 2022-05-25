@@ -1,0 +1,18 @@
+.sidebar {
+
+}
+.sidebar.active {
+  width: 60px;
+}
+.sidebar .logoDetails {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.sidebar .logoDetails i {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 60px;
+  text-align: center;
+}
